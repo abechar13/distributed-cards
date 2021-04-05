@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Denk One', sans-serif;
+  font-family: sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-transform: uppercase;
+  display: flex;
+}
+
+nav ul li {
+  padding: 0 1rem;
+}
+
+h1 {
+  color: #623b0c;
+  font-family: 'Denk One', sans-serif;
+}
+
+h2 {
+  color: #623b0c;
+  font-family: 'Denk One', sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: #484848;
+}
+
+main {
+  max-width:  90em;
+  background-color: #f5f2f0;
+  margin: 0 auto;
+}
+
+section {
+  padding: 1rem;
+}
+
+section > ul {
+  display: flex;
+  list-style-type: none;
+  padding: none;
+  margin: 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section > ul li {
+  background-color: #fff;
+  width: 20em;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section > ul p {
+  flex-grow: 1;
+}
+
+@media only screen and (min-width: 40em) {
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
