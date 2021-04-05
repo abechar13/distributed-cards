@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
-  font-family: 'Denk One', sans-serif;
-  font-family: sans-serif;
+  font-family: "Denk One", sans-serif;
+  line-height: 1.5;
 }
 
 *, *::before, *::after {
@@ -14,6 +14,11 @@ img {
 
 body {
   margin: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "banner banner banner"
+    "col1 col2 col3";
+  gap: .75em;
 }
 
 header {
@@ -37,23 +42,30 @@ nav ul li {
   border-radius: 8px;
 }
 
+ol li a:hover {
+  background-color: #fff;
+  text-decoration: underline;
+  corner-radius: 8px;
+  boarder-thickness: 2px;
+}
+
 h1 {
   color: #623b0c;
-  font-family: 'Denk One', sans-serif;
+  font-family: "Denk One", sans-serif;
 }
 
 h2 {
   color: #623b0c;
-  font-family: 'Denk One', sans-serif;
+  font-family: "Denk One", sans-serif;
 }
 
-nav a {
+main a {
   text-decoration: none;
   color: #484848;
 }
 
 main {
-  max-width:  90em;
+  max-width: 90em;
   background-color: #f5f2f0;
   margin: 0 auto;
 }
@@ -65,11 +77,11 @@ section {
 section > ul {
   display: flex;
   list-style-type: none;
-  padding: none;
+  padding: .75em 1em .6em;
   margin: 0;
   gap: 1rem;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 section > ul li {
@@ -80,10 +92,6 @@ section > ul li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-section > ul p {
-  flex-grow: 1;
 }
 
 @media only screen and (min-width: 40em) {
